@@ -1,0 +1,123 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 28em);
+  padding: 4em;
+  color: #00e5ad;
+  font-family: 'Sofia', monospace;  
+  background-image: linear-gradient(to right, #14047c, #02167a, #002176, #002971, #0e2f6a, #044079, #045285, #126391, #0088b2, #00aecd, #25d4e2, #5ffbf1); 
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color:rgb(10, 14, 231);}
+}
+.box {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.object {
+  display: flex;
+	flex: 0 1 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.outline {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 8px solid #B5A4A4;
+  animation: pulse 2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	position: absolute;
+}
+
+.button {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #50CDDD;
+	box-shadow: 0px 0px 80px #0084F9;
+	position: absolute;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+		border: 65px solid #0B3082;
+  }
+  50% {
+		border: solid #A3FFC2;		
+		opacity: 0.8;
+  }
+	
+	 90% {
+    transform: scale(3.2);
+		opacity: 0.2;
+		border: 3px solid #2E3CFF;
+  }
+  100% {
+    transform: scale(3.3);
+		opacity: 0;
+		border: 1px solid #7A89FF;
+  }
+}
+
+#delayed {
+	animation-delay: 1.5s;
+}
+
+#circlein {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #6BD6E1;
+	box-shadow: 0px -2px 15px #E0FF94;
+	position: absolute;
+}
+
+.mic-icon {
+	height: 60px;
+	position: absolute;
+	margin: 21px;
+}
+div.t {
+  height: calc(100vh - 18em);
+  padding: 18em;
+  margin: 90px;
+  text-align: center;
+
+}
